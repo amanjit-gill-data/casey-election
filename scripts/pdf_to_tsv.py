@@ -2,7 +2,11 @@
 
 import os
 import tabula.io
-import pandas as pd
+
+
+# %% 
+
+PDF_DIR = "."
 
 # %% 
 
@@ -47,8 +51,8 @@ def clean_all_tsv(dir: str) -> None:
 
 def main():
 
-    convert_all_pdf(".")
-    clean_all_tsv(".")    
+    convert_all_pdf(PDF_DIR)
+    clean_all_tsv(PDF_DIR)   
 
 # %% 
 
