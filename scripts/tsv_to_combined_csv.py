@@ -1,12 +1,14 @@
 # read each candidate tsv into df and clean 
 # extract data from each df; combine into one df for all candidates
+# output as csv
 
 import os
 import pandas as pd 
+import sys
 
 # %% 
 
-TSV_DIR = "."
+TSV_DIR = sys.argv[1]
 
 # %% 
 
@@ -76,14 +78,15 @@ def all_tsv_to_df(dir: str) -> pd.DataFrame:
             df_list.append(one_response)
 
     return pd.DataFrame(df_list, 
-                        columns=["name", "ward", "endorsed", "vision", "expertise"]) # pyright: ignore
+                        columns=["name", "ward", "endorsed", "vision", 
+                                 "expertise"]) # pyright: ignore
 
 # %% 
 
 def main():
 
     df = all_tsv_to_df(TSV_DIR)
-    df.to_csv("candidates.csv")
+    df.to_csv("all_candidates.csv")
 
 # %% 
 

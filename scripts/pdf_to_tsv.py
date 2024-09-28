@@ -1,12 +1,12 @@
 # convert pdf files to tsv
 
 import os
+import sys
 import tabula.io
-
 
 # %% 
 
-PDF_DIR = "."
+PDF_DIR = sys.argv[1]
 
 # %% 
 
