@@ -1,4 +1,7 @@
-# use the all-candidates csv for analysis 
+# sort all-candidates csv by ward, then candidate name 
+
+# including this in the pdf-tsv-df-csv process would lose the data that was 
+# manually added for six corrupted pdfs 
 
 import pandas as pd
 
