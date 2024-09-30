@@ -5,8 +5,8 @@ import pandas as pd
 
 # %% 
 
-ALL_WARDS_CSV = "../questionnaires/all_candidates_sorted.csv"
-WARD_CSV_PATH = "../questionnaires/wards/"
+ALL_WARDS_CSV = "../questionnaires/csv/all_candidates_sorted.csv"
+WARD_CSV_PATH = "../questionnaires/csv/wards/"
 
 # %% 
 
