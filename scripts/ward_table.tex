@@ -13,7 +13,7 @@
 % let table continue onto another page 
 \usepackage{longtable}
 
-\title{Akoonah Ward}
+\title{WARDNAME Ward}
 
 % don't make author and date; also remove spaces for these
 \author{\vspace{-5ex}} 
@@ -33,7 +33,7 @@
 }
 
   \maketitle
-  \csvreader[mystyle]{../questionnaires/tsv/wards/Akoonah.tsv}{} {
+  \csvreader[mystyle]{"FILEPATH"}{} {
     \csvcolii & \csvcoliv & \csvcolv & \csvcolvi
   }
 
