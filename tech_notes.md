@@ -27,3 +27,7 @@ random-wait     Wait from 0.5 to 1.5 * --wait seconds between retrievals
 limit-rate=20k  Limit the download rate to 20 kilobytes per second
 ```
 
+## reminders 
+
+manually add non-respondents to all-candidates-sorted.csv 
+- before converting to all-candidates-sorted.tsv, splitting by ward, etc
