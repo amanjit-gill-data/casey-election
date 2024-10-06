@@ -25,16 +25,17 @@
 \fontfamily{lmss}\selectfont
 
 \csvstyle{mystyle}{
-  longtable=|l|c|p{0.3\linewidth}|p{0.3\linewidth}|,
+  longtable=|l|c|c|p{0.25\linewidth}|p{0.25\linewidth}|,
   separator=tab,
   respect and,
-  table head=\hline Name & Endorsed & Vision & Expertise \\\hline,
+  table head=\hline Name & Member & Endorsed & Vision & Expertise \\\hline,
   late after line=\\\hline 
 }
 
-  \maketitle
+  \centering\textbf{\LARGE WARDNAME Ward}
+
   \csvreader[mystyle]{"FILEPATH"}{} {
-    \csvcolii & \csvcoliv & \csvcolv & \csvcolvi
+    \csvcolii & \csvcoliv & \csvcolv & \csvcolvi & \csvcolvii
   }
 
 \end{document}

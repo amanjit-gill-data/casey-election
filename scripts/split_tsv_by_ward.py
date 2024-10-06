@@ -5,7 +5,7 @@ import pandas as pd
 
 # %% 
 
-ALL_WARDS_TSV = "../questionnaires/tsv/all_candidates_sorted.tsv"
+ALL_WARDS_TSV = "../questionnaires/tsv/all_candidates_with_parties.tsv"
 WARD_TSV_PATH = "../questionnaires/tsv/wards/"
 
 # %% 
