@@ -1,0 +1,41 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=1.5cm, landscape]{geometry}
+
+% contains Latin Modern Sans Serif font
+\usepackage{lmodern}
+
+% read in csv/tsv and create table
+\usepackage{csvsimple}
+
+% allow left-align of paragraph columns; otherwise they are forced to justify
+\usepackage[document]{ragged2e}
+
+% let table continue onto another page 
+\usepackage{longtable}
+
+\title{Akoonah Ward}
+
+% don't make author and date; also remove spaces for these
+\author{\vspace{-5ex}} 
+\date{\vspace{-5ex}} 
+
+\begin{document}
+
+% select Latin Modern Sans Serif as default
+\fontfamily{lmss}\selectfont
+
+\csvstyle{mystyle}{
+  longtable=|l|c|p{0.3\linewidth}|p{0.3\linewidth}|,
+  separator=tab,
+  respect and,
+  table head=\hline Name & Endorsed & Vision & Expertise \\\hline,
+  late after line=\\\hline 
+}
+
+  \maketitle
+  \csvreader[mystyle]{../questionnaires/tsv/wards/Akoonah.tsv}{} {
+    \csvcolii & \csvcoliv & \csvcolv & \csvcolvi
+  }
+
+\end{document}
+

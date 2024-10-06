@@ -16,12 +16,5 @@ df.drop(columns="Unnamed: 0", inplace=True)
 
 # %% 
 
-# replace & and ! as these cause latex to not build
-
-df = df.replace("&", "and", regex=True)
-df = df.replace("!", ".", regex=True)
-
-# %% 
-
-df.to_csv("../questionnaires/csv/all_candidates_sorted.tsv", sep="\t")
+df.to_csv("../questionnaires/tsv/all_candidates_sorted.tsv", sep="\t")
 
